@@ -1,3 +1,4 @@
+// Star patterns using just printf statement
 #include <stdio.h>
 int main()
 {
@@ -14,7 +15,7 @@ int main()
     printf("* * *\n");
     printf("* *\n");
     printf("*\n");
-    
+
     printf("Left Half Pyramid\n");
     printf("        *\n");
     printf("      * *\n");
