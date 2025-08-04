@@ -13,7 +13,7 @@ int main(){
     printf("%d - %d = %d\n", a, b, a-b);
     printf("%d * %d = %d\n", a, b, a*b);
     printf("%d / %d = %d\n", a, b, a/b);
-    printf("%d % %d = %d\n", a, b, a%b);
+    printf("%d modulo %d = %d\n", a, b, a%b);
 
 
     return 0;
