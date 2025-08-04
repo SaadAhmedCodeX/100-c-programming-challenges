@@ -1,7 +1,8 @@
 // Program to swap two numbers
 #include <stdio.h>
 
-int main(){
+int main()
+{
     int a,b,temp;
 
     printf("Enter the value for a: ");
