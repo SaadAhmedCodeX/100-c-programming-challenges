@@ -25,7 +25,7 @@ int main(){
         break;
     case '/':
         if (second != 0)
-        printf("%d / %d = %.2f\n", first, second, (float)first / second);
+        printf("%d / %d = %.2f\n", first, second, ((float)first/second));
     else
         printf("Error: Division by zero is not allowed\n");
     break;
