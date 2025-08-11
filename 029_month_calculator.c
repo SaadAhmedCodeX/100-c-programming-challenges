@@ -1,7 +1,8 @@
 // 29. Create a program to print the month of the year based on a number (1-12) input by the user.
 #include <stdio.h>
 
-int main(){
+int main()
+{
     int month;
     printf("Enter the month: ");
     scanf("%d", &month);
@@ -44,7 +45,7 @@ int main(){
     case 12:
         printf("December\n");
         break;
-    
+
     default:
         printf("Invalid month!\n");
         printf("Please enter between (1-12)");
