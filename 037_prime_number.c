@@ -14,7 +14,7 @@ int main(){
     
     while( i*i <= num){ // only checks factors up to square of the number to avoid redundant checks
         if (num % i == 0){
-            isPrime = 0; // found a factor ( changine the value of isPrime changes to false)
+            isPrime = 0; // found a factor ( the value of isPrime changes to false)
             break; 
         }
         i++;
