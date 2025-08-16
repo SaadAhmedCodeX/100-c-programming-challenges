@@ -10,7 +10,7 @@ int main()
     scanf("%d", &num);
     if (num < 0)
         printf("Invalid input!\n");
-        printf("Please enter a145 positive number\n");
+        printf("Please enter a positive number\n");
     } while (num < 0);
 
     originalNum = num;
