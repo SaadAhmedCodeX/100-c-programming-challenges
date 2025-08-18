@@ -8,15 +8,11 @@ int main(){
 
     printf("Multiplication table of %d:\n", number);
     printf("---------------------------\n");
-    for (int i = 1; i <= 10; i++)
-    {
+    int i = 1;
+    while(i < 11){
         printf("%d x %d = %d\n",number, i, (number*i));
+        i++;
     }
-    // int i = 1;
-    // while(i < 11){
-    //     printf("%d x %d = %d\n",number, i, (number*i));
-    //     i++;
-    // }
     
     return 0;
 }
