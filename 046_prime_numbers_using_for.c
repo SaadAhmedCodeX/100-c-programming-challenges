@@ -1,4 +1,4 @@
-
+// Create a program using for to display if a number is prime or not.
 #include <stdio.h>
 
 int main()
