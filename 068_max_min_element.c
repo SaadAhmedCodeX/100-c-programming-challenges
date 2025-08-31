@@ -15,7 +15,7 @@ int main(){
     }
     
 
-    max = min = arr[0];
+    max = min = arr[0]; // Initializing both max and min to the first element of the array
 
     for (int i = 1; i < n; i++)
     {
