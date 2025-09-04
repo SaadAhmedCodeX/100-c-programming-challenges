@@ -4,7 +4,8 @@
 void delete(int arr[], int size, int new_arr[], int *new_size, int element);
 void display_arr(int arr[], int size);
 
-int main(){
+int main()
+{
     int size;
     printf("Enter number of elements: ");
     scanf("%d", &size);
@@ -16,42 +17,46 @@ int main(){
     {
         scanf("%d", &arr[i]);
     }
-    
+
     int new_arr[size];
     int new_size;
     int element;
 
-    printf("Enter the element to delete: ");
+    printf("The original array is:\n");
+    for (int i = 0; i < size; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+
+    printf("\nEnter the element to delete: ");
     scanf("%d", &element);
+
 
     delete(arr, size, new_arr, &new_size, element);
 
-    printf("The original array is:\n");
-        for (int i = 0; i < size; i++){
-        printf(" %d", arr[i]);
-        }
-    printf("Array after deleting the element: \n");
+    printf("\nArray after deleting the element: \n");
     display_arr(new_arr, new_size);
 
     return 0;
 }
 
-void delete(int arr[], int size, int new_arr[], int *new_size, int element){
+void delete(int arr[], int size, int new_arr[], int *new_size, int element)
+{
     int j = 0;
     for (int i = 0; i < size; i++)
     {
-       if(arr[i] != element){
-        new_arr[j] = arr[i];
-        j++;
-       }
+        if (arr[i] != element)
+        {
+            new_arr[j] = arr[i];
+            j++;
+        }
     }
-    *new_size = j;    
+    *new_size = j;
 }
-void display_arr(int arr[], int size){
+void display_arr(int arr[], int size)
+{
     for (int i = 0; i < size; i++)
     {
-        printf(" %d", arr[i]);
+        printf("%d ", arr[i]);
     }
-    
 }
-
