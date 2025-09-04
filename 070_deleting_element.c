@@ -23,10 +23,7 @@ int main()
     int element;
 
     printf("The original array is:\n");
-    for (int i = 0; i < size; i++)
-    {
-        printf("%d ", arr[i]);
-    }
+    display_arr(arr, size);
 
     printf("\nEnter the element to delete: ");
     scanf("%d", &element);
