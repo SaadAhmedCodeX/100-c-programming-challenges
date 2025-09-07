@@ -3,7 +3,7 @@
 
 void input_array(int arr[], int size);
 void swap(int *first, int *second);
-void reverse(int arr[], int size);
+void reverse_arr(int arr[], int size);
 void display_arr(int arr[], int size);
 
 int main(){
@@ -20,7 +20,7 @@ int main(){
     display_arr(arr, size);
 
     printf("\nArray after reversing:\n");
-    reverse(arr, size);
+    reverse_arr(arr, size);
     display_arr(arr, size);
 
     return 0;
@@ -41,7 +41,7 @@ void swap(int *first, int *second){
     *second = temp;
 }
 
-void reverse(int arr[], int size){
+void reverse_arr(int arr[], int size){
     for (int i = 0; i < size / 2 ; i++) // Loop only till half since each iteration swaps two elements
     {
        swap(&arr[i], &arr[(size - 1)- i]); 
