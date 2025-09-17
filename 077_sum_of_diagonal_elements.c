@@ -57,7 +57,7 @@ void display_arr(int row, int col, int arr[row][col])
     {
         for (int j = 0; j < col; j++)
         {
-            printf("%d   ", arr[i][j]);
+            printf("%4d", arr[i][j]); // reserves 4 spaces width for alignment
         }
         printf("\n");
     }
