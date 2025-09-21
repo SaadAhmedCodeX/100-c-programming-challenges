@@ -8,7 +8,7 @@ int main(){
     printf("Enter your text to convert into uppercase: ");
     fgets(text, sizeof(text), stdin);
 
-    for (int i = 0; text[i] != '\0'; i++)
+    // for (int i = 0; text[i] != '\0'; i++)
     for (int i = 0; i < strlen(text); i++)
     {
         text[i] = toupper(text[i]);
