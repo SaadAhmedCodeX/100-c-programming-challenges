@@ -17,7 +17,7 @@ int main(){
         fputc(c, dest_file);
     }
 
-    printf("File copied successfully!\n");
+    printf("File's contents copied successfully!\n");
 
     fclose(source_file);
     fclose(dest_file);
