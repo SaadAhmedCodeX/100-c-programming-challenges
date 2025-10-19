@@ -11,10 +11,15 @@ int main(){
     }
 
     char input[100];
-    do{
+    while(1){
+        printf("Enter text to be written into the file:\n");
         fgets(input, 100, stdin);
+        if(strcmp(input, "exit\n") == 0) break;
         fputs(input, file);
-    } while(strmp(input, "exit\n") != 0);
-    
+    }
+
+    fclose(file);
+    file = NULL;
+
     return 0;
 }
