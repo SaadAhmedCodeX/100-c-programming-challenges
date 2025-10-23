@@ -1,0 +1,6 @@
+Hello world
+Learning File Handling in C
+Test
+Am i writing?
+If yes then our program is working properly as expected
+Yayyy!
